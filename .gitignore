@@ -1,0 +1,32 @@
+# --- OS / System files ---
+.DS_Store
+Thumbs.db
+
+# --- IDE / Editors ---
+.idea/
+*.iml
+.vscode/
+*.swp
+*.swo
+
+# --- Logs / Temp ---
+*.log
+*.tmp
+*.bak
+
+# --- Node / Build systems (на будущее, если подключишь npm или bundler) ---
+node_modules/
+dist/
+build/
+.cache/
+.out/
+
+# --- Python virtual envs (если решишь генерить скриптами) ---
+venv/
+__pycache__/
+
+# --- Misc ---
+*.zip
+*.7z
+*.tar
+*.gz
