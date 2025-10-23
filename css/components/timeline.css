@@ -1,0 +1,51 @@
+.timeline {
+    display: grid;
+    gap: 18px;
+}
+
+.job {
+    padding: 16px;
+    box-shadow: var(--shadow);
+    transition: transform 0.16s ease, box-shadow 0.16s ease;
+}
+
+.job:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 26px rgba(0, 0, 0, 0.10);
+}
+
+.job__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 12px;
+    margin-bottom: 6px;
+    color: var(--text);
+}
+
+.job__head strong {
+    font-weight: 700;
+    color: var(--text);
+}
+
+.job__list {
+    margin: 8px 0 0 18px;
+    padding: 0;
+    color: var(--text);
+    line-height: 1.6;
+}
+
+.job__list li {
+    margin-bottom: 4px;
+}
+
+.job__list em {
+    color: var(--accent);
+    font-style: normal;
+    font-weight: 500;
+}
+
+.section.alt {
+    padding: 20px 0;
+    border-radius: var(--radius);
+}

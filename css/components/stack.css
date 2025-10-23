@@ -1,0 +1,13 @@
+.stack{display:grid; gap:16px; grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.stack-card{
+    background:var(--card); border:1px solid var(--line); border-radius:var(--radius);
+    box-shadow:var(--shadow); padding:14px; transition:transform .16s ease, box-shadow .16s ease;
+}
+.stack-card:hover{transform:translateY(-2px); box-shadow:0 12px 26px rgba(0,0,0,.10)}
+.stack-title{margin:0 0 10px; font-size:14px; font-weight:800; letter-spacing:.4px; text-transform:uppercase; color:var(--muted)}
+.tags{display:flex; flex-wrap:wrap; gap:8px}
+.tag{
+    display:inline-block; padding:6px 10px; border-radius:999px;
+    background:#f4f6fb; border:1px solid #e7ebf3; font-size:13px; line-height:1; color:#2b3a55; white-space:nowrap;
+}
+.lang-edu{margin-top:18px; color:var(--muted); display:grid; gap:6px}

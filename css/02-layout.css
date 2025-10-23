@@ -1,0 +1,14 @@
+.container{max-width:1080px; margin:0 auto; padding:0 20px}
+.section{padding:10px 0; }
+.section_inner{padding:10px 0; }
+.section__title{margin:18px 0 18px; padding-left: 10px; font-size:26px; color:var(--text); font-weight:700;}
+.grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:18px}
+.hero{min-height:auto;}
+.hero__text{text-align:left; max-width:900px; color:var(--text)}
+.hero__lead{text-indent:2em; line-height:1.6}
+.portrait{
+    width:140px;height:140px;border-radius:50%;
+    color:#fff;font-size:48px;font-weight:700;display:flex;
+    align-items:flex-start;justify-content:flex-start;
+    box-shadow:0 6px 20px rgba(0,0,0,.15);
+}

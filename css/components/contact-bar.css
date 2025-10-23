@@ -1,0 +1,8 @@
+.contact-bar{
+    position:fixed; bottom:0; left:0; width:100%; z-index:999;
+    background:var(--bg); color:#fff; border-top:1px solid #333; padding:10px 0;
+    backdrop-filter:saturate(180%) blur(8px);
+}
+.contact__inner{display:flex; justify-content:center; align-items:center; gap:40px; flex-wrap:wrap}
+.contact__link{color:#fff; text-decoration:none; font-weight:500; font-size:14px; opacity:.9; transition:opacity .15s ease}
+.contact__link:hover{opacity:1; text-decoration:underline}

@@ -1,0 +1,126 @@
+.project-hero {
+    text-align: center;
+}
+.project-details {
+    padding-top: 6px;  
+}
+
+.project-title {
+    margin: 10px 0 12px;
+    font-size: 34px;
+    font-weight: 800;
+    letter-spacing: .2px;
+    color: var(--text);
+}
+
+.project-icon {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 24px;
+    display: inline-block;
+    box-shadow: 0 10px 30px rgba(0,0,0,.18);
+    margin: 10px 0 16px;
+}
+
+.store-buttons {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 6px 0 8px;
+}
+
+/* Бейдж-кнопки стор */
+.btn.btn--store {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 14px;
+    border-radius: 12px;
+    font-weight: 700;
+    line-height: 1;
+    border: 1px solid var(--line);
+    text-decoration: none;
+    user-select: none;
+    box-shadow: var(--shadow);
+}
+
+/* iOS – чёрный бейдж по гайдам Apple */
+.btn.btn--store.ios {
+    background: #595454;
+    color: #fff;
+    border-color: #000;
+}
+
+/* Android – зелёный с контрастным текстом */
+.btn.btn--store.android {
+    background: #3ddc84; /* Google Play green */
+    color: #0b2b17;
+    border-color: #2fb86b;
+}
+
+.btn.btn--store:hover { filter: brightness(.95); text-decoration: none; }
+
+/* Мелкий подпояснительный текст */
+.project-publish-note {
+    margin-top: 6px;
+}
+
+/* Адаптив */
+@media (max-width: 560px) {
+    .project-title { font-size: 28px; }
+    .project-icon { width: 140px; height: 140px; border-radius: 20px; }
+    .btn.btn--store { width: 100%; justify-content: center; }
+}
+
+.project-subtitle {
+    margin: 18px 0 10px;
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--text);
+    letter-spacing: .2px;
+}
+
+.project-list {
+    margin: 0 0 16px 18px;      
+    padding: 0;
+    color: var(--text);
+    line-height: 1.65;
+    max-width: 900px;
+}
+
+.project-list li + li {
+    margin-top: 6px;      
+}
+
+.project-list li::marker {
+    color: var(--accent);
+    font-weight: 700;
+}
+
+.project-tech{
+    margin: 0 0 16px 18px;
+    padding: 0;
+    color: var(--text);
+    line-height: 1.65;
+    max-width: 900px;
+}
+
+/* Карточка техов под стиль stack-card */
+.project-tech-card {
+    margin: 8px 0 0;
+    color: var(--text);
+}
+
+/* Чуть плотнее теги именно в карточке проекта */
+.project-tech-card .tags {
+    gap: 10px;
+    color: var(--text);
+}
+
+.project-tech-card .tag {
+    padding: 6px 10px;
+    font-size: 13px;
+    color: var(--text);
+}

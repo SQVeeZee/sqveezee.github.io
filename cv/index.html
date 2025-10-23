@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CV — Danila Shyntar</title>
+    <link rel="stylesheet" href="../style.css" />
+    <style>
+        :root{
+            --cv-bg:#0e0f12;
+            --cv-panel:#16181d;
+            --cv-line:#242733;
+            --cv-btn:#2f80ed;
+        }
+
+        html, body { height:auto; }
+        body{
+            margin:0;
+            background: var(--cv-bg);
+            color:#fff;
+            display:flex;
+            flex-direction:column;
+            font-family:system-ui, -apple-system, "Segoe UI", Roboto, Inter, Arial, sans-serif;
+        }
+
+        .cvbg{
+            position:fixed;
+            inset:0;
+            z-index:-1;
+            pointer-events:none;
+            background:
+                    radial-gradient(1200px 600px at 10% -10%, rgba(47,128,237,.15), transparent 60%),
+                    radial-gradient(1200px 800px at 120% 20%, rgba(122,167,233,.12), transparent 60%),
+                    var(--cv-bg);
+        }
+        /* лёгкое «зерно», чтобы убрать бэндинг на тёмных градиентах (необязательно) */
+        .cvbg::after{
+            content:"";
+            position:absolute; inset:0;
+            pointer-events:none;
+            background-image: radial-gradient(rgba(255,255,255,.012) 0.5px, transparent 0.5px);
+            background-size: 3px 3px;
+            mix-blend-mode: overlay;
+        }
+
+        /* Top bar (fixed) */
+        .cvbar{
+            position:fixed; top:0; left:0; width:100%; z-index:10;
+            background:rgba(22,24,29,.85);
+            backdrop-filter:saturate(160%) blur(10px);
+            border-bottom:1px solid var(--cv-line);
+        }
+        .cvbar__inner{
+            max-width:1200px; margin:0 auto; padding:12px 16px;
+            display:flex; align-items:center; justify-content:space-between; gap:14px;
+            box-sizing:border-box;
+        }
+        .cvbar__left{display:flex; align-items:center; gap:12px}
+        .cvbar__back{
+            color:#fff; text-decoration:none; font-weight:700;
+            padding:8px 10px; border-radius:10px;
+        }
+        .cvbar__back:hover{background:#1b1e26}
+        .cvbar__title{opacity:.85; font-weight:600}
+
+        .cv-actions{display:flex; gap:10px; flex-wrap:wrap}
+        .btn{
+            display:inline-flex; align-items:center; gap:8px;
+            padding:9px 12px; border-radius:10px; border:1px solid #2a2e3a;
+            background:#1a1d24; color:#fff; text-decoration:none; font-weight:600;
+            transition:transform .15s ease, background .15s ease, border-color .15s ease;
+            user-select:none;
+        }
+        .btn:hover{background:#202532; border-color:#34394a; text-decoration:none}
+        .btn--primary{background:var(--cv-btn); border-color:transparent}
+        .btn--primary:hover{filter:brightness(.95)}
+        .btn svg{width:18px; height:18px; opacity:.9}
+
+        /* Viewer frame */
+        .cv-main{
+            flex:1;
+            display:flex; align-items:center; justify-content:center;
+            padding: 88px 16px 24px;
+            box-sizing:border-box;
+        }
+        .cv-frame{
+            width:100%; max-width:980px; aspect-ratio: 1/1.3;
+            background:#fff; border-radius:14px; overflow:hidden;
+            box-shadow: 0 20px 60px rgba(0,0,0,.45), 0 2px 16px rgba(0,0,0,.35);
+            position:relative;
+        }
+        @media (max-width: 1200px){ .cv-frame{max-width:900px} }
+        @media (max-width: 900px){  .cv-frame{max-width:760px} }
+        @media (max-width: 700px){  .cv-frame{max-width:100%; aspect-ratio:auto; height:78vh} }
+
+        .cv-object{
+            width:100%; height:100%; border:0; display:block; background:#fff;
+        }
+
+        /* Fallback */
+        .cv-fallback{
+            position:absolute; inset:0; display:grid; place-items:center;
+            padding:24px; text-align:center; background:#0f1116; color:#e6e9f2;
+        }
+        .cv-fallback a{color:#9ec1ff; font-weight:700}
+        .cv-fallback__box{
+            max-width:520px; background:#131723; border:1px solid #23283a;
+            border-radius:14px; padding:20px;
+            box-shadow: inset 0 0 0 1px rgba(255,255,255,.03);
+        }
+    </style>
+</head>
+<body>
+
+<div class="cvbg" aria-hidden="true"></div>
+
+<!-- top bar -->
+<div class="cvbar">
+    <div class="cvbar__inner">
+        <div class="cvbar__left">
+            <a class="cvbar__back" href="../index.html">← Back to Portfolio</a>
+            <div class="cvbar__title">CV — Danila Shyntar</div>
+        </div>
+        <div class="cv-actions">
+            <a class="btn" href="cv_danila_shyntar.pdf" target="_blank" rel="noopener" title="Open CV in new tab">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M14 3h7v7M21 3l-7 7M5 12v7a2 2 0 002 2h7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Open in new tab
+            </a>
+            <a class="btn btn--primary" href="cv_danila_shyntar.pdf" download title="Download CV PDF">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M12 3v12m0 0l-4-4m4 4l4-4M5 21h14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Download CV
+            </a>
+            <button class="btn" id="printBtn" type="button" title="Print">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M6 9V3h12v6M6 14h12v7H6v-7ZM6 14H4a2 2 0 01-2-2v-1a2 2 0 012-2h16a2 2 0 012 2v1a2 2 0 01-2 2h-2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Print
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- viewer -->
+<main class="cv-main">
+    <div class="cv-frame">
+        <object class="cv-object"
+                data="cv_danila_shyntar.pdf#zoom=page-width"
+                type="application/pdf">
+            <div class="cv-fallback">
+                <div class="cv-fallback__box">
+                    <p>It looks like your browser can't display embedded PDFs.</p>
+                    <p>
+                        <a href="cv_danila_shyntar.pdf" target="_blank" rel="noopener">Open the CV in a new tab</a>
+                        &nbsp;or&nbsp;
+                        <a href="cv_danila_shyntar.pdf" download>download the PDF</a>.
+                    </p>
+                </div>
+            </div>
+        </object>
+    </div>
+</main>
+
+<script>
+    // Печать: пробуем распечатать содержимое <object>.
+    document.getElementById('printBtn').addEventListener('click', () => {
+        const obj = document.querySelector('.cv-object');
+        try {
+            obj.contentWindow ? obj.contentWindow.print() : window.open('cv_danila_shyntar.pdf').print();
+        } catch (e) {
+            window.open('cv_danila_shyntar.pdf', '_blank');
+        }
+    });
+</script>
+</body>
+</html>

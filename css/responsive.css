@@ -1,0 +1,10 @@
+@media (max-width:900px){
+    .hero__inner{grid-template-columns:0fr}
+    .hero__media{order:-1}
+    .hero__title{font-size:20px}
+    .hero__subtitle{font-size:20px}
+
+    .card__actions{
+        display:flex; gap:10px; align-items:flex-start; flex-wrap:wrap; margin-top:10px;
+    }
+}

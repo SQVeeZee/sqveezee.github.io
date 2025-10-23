@@ -1,0 +1,18 @@
+:root{
+    --bg:#000000; 
+    --section_inner: #0d1411; 
+    --text: #ffffffff;
+    --fg:#222; 
+    --muted:#666; 
+    --line:#000000;
+    
+    --card:#ffffffff;
+    --accent:#0a66c2; 
+    --shadow:0 8px 24px rgba(0,0,0,.08);
+    --radius:14px; 
+    
+    --c1:#eef2f8; 
+    --c2:#c7d7f2; 
+    --c3:#a9c4ee; 
+    --c4:#7aa7e9;
+}

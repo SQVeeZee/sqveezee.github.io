@@ -1,11 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8" />
-    <title>Danila Shyntar (SQVeeZee) — Unity Developer</title>
+    <title>Danila Shyntar — Unity Developer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Unity developer portfolio — 5 years experience. Casual, hybrid hyper-casual, puzzle. Entitas/DOTS, Zenject, UniTask, Addressables. Warsaw, Poland." />
-    <link rel="stylesheet" href="style.css" />
+    
+    <link rel="stylesheet" href="css/00-variables.css">
+    <link rel="stylesheet" href="css/01-base.css">
+    <link rel="stylesheet" href="css/02-layout.css">
+
+    <link rel="stylesheet" href="css/components/nav.css">
+    <link rel="stylesheet" href="css/components/card.css">
+    <link rel="stylesheet" href="css/components/timeline.css">
+    <link rel="stylesheet" href="css/components/stack.css">
+    <link rel="stylesheet" href="css/components/contact-bar.css">
+    <link rel="stylesheet" href="css/components/buttons.css">
+
+    <link rel="stylesheet" href="css/utils.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    
 </head>
 <body>
 <!-- NAV -->
@@ -16,26 +31,20 @@
             <a href="#projects">Projects</a>
             <a href="#experience">Experience</a>
             <a href="#stack">Tech Stack</a>
-            <a href="#contact">Contact</a>
+            <a href="cv/index.html">CV</a>
         </nav>
     </div>
 </header>
 
 <!-- HERO -->
 <section id="home" class="hero">
-    <div class="container hero__inner">
+    <div class="container">
         <div class="hero__text">
-            <h1 class="hero__title">Danila Shyntar <span class="muted">(SQVeeZee)</span></h1>
-            <h2 class="hero__subtitle">Unity Developer</h2>
+            <h2 class="hero__title">Danila Shyntar</h2>
+            <h1 class="hero__subtitle">Unity Developer</h1>
             <p class="hero__lead">
-                5 years building casual / hybrid hyper-casual / puzzle games. Architected core mechanics, optimized UI and resources, integrated analytics & SDKs, and shipped internal tools for cross-functional teams.
+                Unity developer with 5 years of experience; Architected and implemented core mechanics for casual, hybrid hyper-casual, and puzzle games; owned projects end-to-end, optimized UI and resources, integrated third-party SDKs, and built internal tools for multidisciplinary teams.
             </p>
-            <p class="hero__meta">
-                📍 Warsaw, Poland — On-site · Hybrid · Remote
-            </p>
-        </div>
-        <div class="hero__media">
-            <div class="portrait">SQ</div>
         </div>
     </div>
 </section>
@@ -44,20 +53,16 @@
 <section id="projects" class="section">
     <div class="container">
         <h3 class="section__title">Store projects</h3>
-
         <div class="grid">
             <!-- Bubble Jam -->
             <article class="card">
                 <a class="card__link" href="projects/bubble-jam/index.html">
                     <div class="card__thumb">
                         <img src="images/bubble-jam.webp" alt="Bubble Jam cover" class="card__image">
-                    </div>
-                    <div class="card__body">
                         <h4 class="card__title">Bubble Jam</h4>
                     </div>
                 </a>
             </article>
-
 
             <!-- Cells -->
             <article class="card">
@@ -94,67 +99,61 @@
                     </div>
                 </a>
             </article>
-
-<!--            &lt;!&ndash; Open Code: swipeelements &ndash;&gt;-->
-<!--            <article class="card">-->
-<!--                <a class="card__link" href="https://github.com/SQVeeZee/swipeelements" target="_blank" rel="noopener">-->
-<!--                    <div class="card__thumb">-->
-<!--                        <svg viewBox="0 0 120 68" class="thumb-svg" aria-hidden="true">-->
-<!--                            <rect x="0" y="0" width="120" height="68" rx="12" class="c1"/>-->
-<!--                            <rect x="22" y="22" width="22" height="22" rx="5" class="c2"/>-->
-<!--                            <rect x="49" y="22" width="22" height="22" rx="5" class="c3"/>-->
-<!--                            <rect x="76" y="22" width="22" height="22" rx="5" class="c4"/>-->
-<!--                        </svg>-->
-<!--                    </div>-->
-<!--                    <div class="card__body">-->
-<!--                        <h4 class="card__title">Match-3 (Open Code)</h4>-->
-<!--                        <div class="card__meta">GitHub</div>-->
-<!--                        <p class="card__desc">Zenject • UniTask • grid logic & falling, clean modular architecture.</p>-->
-<!--                    </div>-->
-<!--                </a>-->
-<!--            </article>-->
         </div>
     </div>
 </section>
 
 <!-- EXPERIENCE -->
-<section id="experience" class="section alt">
+<section id="experience" class="section">
     <div class="container">
-        <h3 class="section__title">Work Experience</h3>
-        <div class="timeline">
-            <div class="job">
-                <div class="job__head">
-                    <div><strong>Appsulove</strong> — Unity Developer</div>
-                    <div class="muted">Aug 2022 — Jun 2025</div>
-                </div>
-                <ul class="job__list">
-                    <li>Developed 2D/3D mobile games (<em>Bubble Jam</em>, <em>Cells</em>) using core-module architecture.</li>
-                    <li>Optimized UI & resource management to improve overall performance.</li>
-                    <li>Implemented progression, leaderboards, and liveops events (LTOs, seasonal campaigns).</li>
-                    <li>Set up cross-promotion campaigns; integrated analytics, UI systems, audio, VFX, and various SDKs.</li>
-                </ul>
-            </div>
+        <div class="section_inner">
+            <h3 class="section__title">Work Experience</h3>
 
-            <div class="job">
-                <div class="job__head">
-                    <div><strong>SkyRocket / Azure Pro</strong> — Unity Developer</div>
-                    <div class="muted">Aug 2020 — Nov 2021</div>
-                </div>
-                <ul class="job__list">
-                    <li>Built hybrid hyper-casual games (incl. <em>Bank Robbery</em>) with robust core gameplay loops.</li>
-                    <li>Integrated analytics, SDKs, plugins; improved UI/UX, effects, resource management.</li>
-                </ul>
-            </div>
+            <div class="timeline">
 
-            <div class="job">
-                <div class="job__head">
-                    <div><strong>Apps Hub</strong> — Unity Developer</div>
-                    <div class="muted">Aug 2019 — Aug 2020</div>
+                <!-- Appsulove -->
+                <div class="job">
+                    <div class="job__head">
+                        <div><strong>Appsulove</strong> — Unity Developer</div>
+                        <div class="muted">August 2022 — June 2025</div>
+                    </div>
+                    <ul class="job__list">
+                        <li>Developed 2D/3D mobile games (<em>Bubble Jam</em>, <em>Cells</em>, and others) using a core-module architecture.</li>
+                        <li>Optimized UI and resource management to improve overall game performance.</li>
+                        <li>Implemented leaderboard systems and progression logic.</li>
+                        <li>Integrated liveops events, including limited-time offers (LTOs) and seasonal campaigns.</li>
+                        <li>Set up and managed cross-promotion campaigns across multiple projects.</li>
+                        <li>Integrated analytics, UI systems, audio, visual effects, and various SDKs.</li>
+                    </ul>
                 </div>
-                <ul class="job__list">
-                    <li>Developed 3D hyper-casual games end-to-end — from idea to release.</li>
-                    <li>Implemented UI, physics, core mechanics, analytics, and SDKs.</li>
-                </ul>
+
+                <!-- SkyRocket / Azure Pro -->
+                <div class="job">
+                    <div class="job__head">
+                        <div><strong>SkyRocket / Azure Pro</strong> — Unity Developer</div>
+                        <div class="muted">August 2020 — November 2021</div>
+                    </div>
+                    <ul class="job__list">
+                        <li>Developed hybrid hyper-casual games (including <em>Bank Robbery</em>).</li>
+                        <li>Designed and implemented core gameplay loops.</li>
+                        <li>Integrated analytics, SDKs, and plugins.</li>
+                        <li>Built and optimized UI/UX, effects, and resource management.</li>
+                    </ul>
+                </div>
+
+                <!-- Apps Hub -->
+                <div class="job">
+                    <div class="job__head">
+                        <div><strong>Apps Hub</strong> — Unity Developer</div>
+                        <div class="muted">August 2019 — August 2020</div>
+                    </div>
+                    <ul class="job__list">
+                        <li>Developed 3D hyper-casual games.</li>
+                        <li>Participated in the full development cycle from idea to release.</li>
+                        <li>Implemented UI, physics, core mechanics, analytics, and SDKs.</li>
+                    </ul>
+                </div>
+
             </div>
         </div>
     </div>
@@ -164,79 +163,99 @@
 <section id="stack" class="section">
     <div class="container">
         <h3 class="section__title">Technology Stack</h3>
+
         <div class="stack">
-            <div class="stack__col">
-                <div class="stack__title">Core</div>
-                <ul>
-                    <li>Unity, Git</li>
-                    <li>Zenject, Entitas (ECS)</li>
-                    <li>UniTask, UniRx</li>
-                </ul>
-            </div>
-            <div class="stack__col">
-                <div class="stack__title">Rendering & Animation</div>
-                <ul>
-                    <li>URP / HDRP, basic shaders</li>
-                    <li>Animator, Spine, Timeline, DoTween</li>
-                </ul>
-            </div>
-            <div class="stack__col">
-                <div class="stack__title">Assets & Tooling</div>
-                <ul>
-                    <li>Addressables, Resources, StreamingAssets</li>
-                    <li>Unity Profiler, Android Studio</li>
-                    <li>GitHub Actions (CI)</li>
-                </ul>
-            </div>
-            <div class="stack__col">
-                <div class="stack__title">Online & Analytics</div>
-                <ul>
-                    <li>Photon (PUN2)</li>
-                    <li>Firebase, AppMetrica, AppsFlyer, Facebook SDK</li>
-                    <li>BI: Magify</li>
-                </ul>
-            </div>
-        </div>
+            <article class="stack-card">
+                <h4 class="stack-title">Core</h4>
+                <div class="tags">
+                    <span class="tag">Unity</span>
+                    <span class="tag">Git</span>
+                    <span class="tag">Zenject</span>
+                    <span class="tag">ECS (Entitas)</span>
+                    <span class="tag">UniTask</span>
+                    <span class="tag">UniRx</span>
+                </div>
+            </article>
 
-        <div class="lang-edu">
-            <div><strong>Languages:</strong> Russian — Native; English — A2 (improving)</div>
-            <div><strong>Education:</strong> BSUIR (2016–2020) — Information Systems & Technologies in Game Industry</div>
-            <div><strong>Achievements:</strong> Ludum Dare 44 — 1st place (Best Mechanics, Best Game, Best Graphics); Ludum Dare 45 — participant</div>
+            <article class="stack-card">
+                <h4 class="stack-title">Rendering & Graphics</h4>
+                <div class="tags">
+                    <span class="tag">URP</span>
+                    <span class="tag">HDRP</span>
+                    <span class="tag">Shaders (basic)</span>
+                </div>
+            </article>
+
+            <article class="stack-card">
+                <h4 class="stack-title">Animations</h4>
+                <div class="tags">
+                    <span class="tag">Animator</span>
+                    <span class="tag">Spine</span>
+                    <span class="tag">Timeline</span>
+                    <span class="tag">DOTween</span>
+                </div>
+            </article>
+
+            <article class="stack-card">
+                <h4 class="stack-title">Resources</h4>
+                <div class="tags">
+                    <span class="tag">Addressables</span>
+                    <span class="tag">Resources API</span>
+                    <span class="tag">StreamingAssets</span>
+                </div>
+            </article>
+
+            <article class="stack-card">
+                <h4 class="stack-title">Debugging & Profiling</h4>
+                <div class="tags">
+                    <span class="tag">Unity Profiler</span>
+                    <span class="tag">Android Studio</span>
+                </div>
+            </article>
+
+            <article class="stack-card">
+                <h4 class="stack-title">Continuous Integration (CI)</h4>
+                <div class="tags">
+                    <span class="tag">GitHub Actions</span>
+                </div>
+            </article>
+
+            <article class="stack-card">
+                <h4 class="stack-title">Networking & Multiplayer</h4>
+                <div class="tags">
+                    <span class="tag">Photon (PUN2)</span>
+                </div>
+            </article>
+
+            <article class="stack-card">
+                <h4 class="stack-title">Analytics & Attribution</h4>
+                <div class="tags">
+                    <span class="tag">Firebase</span>
+                    <span class="tag">AppMetrica</span>
+                    <span class="tag">AppsFlyer</span>
+                    <span class="tag">Facebook SDK</span>
+                </div>
+            </article>
+
+            <article class="stack-card">
+                <h4 class="stack-title">Business Intelligence (BI)</h4>
+                <div class="tags">
+                    <span class="tag">Magify</span>
+                </div>
+            </article>
         </div>
     </div>
 </section>
 
-<!-- CONTACT -->
-<section id="contact" class="section">
-    <div class="container contact">
-        <h3 class="section__title">Contact</h3>
-        <div class="contact__grid">
-            <div class="contact__item">
-                <div class="contact__label">Email</div>
-                <a class="contact__link" href="mailto:danila.shintar@gmail.com">danila.shintar@gmail.com</a>
-            </div>
-            <div class="contact__item">
-                <div class="contact__label">LinkedIn</div>
-                <a class="contact__link" href="https://www.linkedin.com/in/danila-shyntar-19b443153/" target="_blank" rel="noopener">linkedin.com/in/danila-shyntar-19b443153</a>
-            </div>
-            <div class="contact__item">
-                <div class="contact__label">Telegram</div>
-                <a class="contact__link" href="https://t.me/Danila_Ss" target="_blank" rel="noopener">@Danila_Ss</a>
-            </div>
-            <div class="contact__item">
-                <div class="contact__label">GitHub</div>
-                <a class="contact__link" href="https://github.com/SQVeeZee" target="_blank" rel="noopener">github.com/SQVeeZee</a>
-            </div>
-        </div>
+<!-- CONTACT BAR -->
+<section id="contact" class="contact-bar">
+    <div class="container contact__inner">
+        <a class="contact__link" href="mailto:danila.shintar@gmail.com">📧 danila.shintar@gmail.com</a>
+        <a class="contact__link" href="https://www.linkedin.com/in/danila-shyntar-19b443153/" target="_blank" rel="noopener">💼 LinkedIn</a>
+        <a class="contact__link" href="https://t.me/Danila_Ss" target="_blank" rel="noopener">💬 Telegram</a>
+        <a class="contact__link" href="https://github.com/SQVeeZee" target="_blank" rel="noopener">💻 GitHub</a>
     </div>
 </section>
 
-<!-- FOOTER -->
-<footer class="footer">
-    <div class="container footer__inner">
-        <span>© 2025 Danila Shyntar (SQVeeZee)</span>
-        <a href="#home" class="toplink">Back to top ↑</a>
-    </div>
-</footer>
 </body>
 </html>
