@@ -1,24 +1,166 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Unity Developer Portfolio — Danila (SQVeeZee)">
-    <meta property="og:title" content="Danila — Unity Developer Portfolio">
-    <meta property="og:description" content="Showcase of Unity projects built with Zenject, ECS, and UniTask (2020–2025).">
-    <meta property="og:type" content="website">
-    <title>Danila — Unity Developer Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8" />
+    <title>Danila (SQVeeZee) — Unity Developer Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Портфолио Unity-разработчика Danila (SQVeeZee): проекты 2020–2025 — Match-3, Entitas/DOTS, Zenject, UniTask." />
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<h1>👋 Hi, I'm Danila</h1>
-<p>Unity Developer (2020–2025)</p>
+<!-- NAV -->
+<header class="nav">
+    <div class="container nav__inner">
+        <a href="#home" class="brand">SQVeeZee</a>
+        <nav class="menu">
+            <a href="#home">Home</a>
+            <a href="#projects">Projects</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <!-- Раскомментируй, если добавишь резюме
+            <a href="resume.pdf" target="_blank" rel="noopener">Resume</a>
+            -->
+        </nav>
+    </div>
+</header>
 
-<section>
-    <h2>Projects</h2>
-    <ul>
-        <li><a href="https://github.com/SQVeeZee/swipeelements">Match-3 (2025)</a> — Zenject + UniTask</li>
-    </ul>
+<!-- HERO -->
+<section id="home" class="hero">
+    <div class="container hero__inner">
+        <div class="hero__text">
+            <h1 class="hero__title">Danila <span class="muted">(SQVeeZee)</span></h1>
+            <h2 class="hero__subtitle">Unity Developer</h2>
+            <p class="hero__lead">
+                2020–2025: Match-3/пазлы, сетки, Entitas/DOTS эксперименты, Zenject/UniTask, Addressables, Editor tooling.
+                Люблю чистую архитектуру и производительность.
+            </p>
+            <!-- Кнопка на демо-ролик (если будет) -->
+            <!-- <a class="btn" href="https://youtu.be/..." target="_blank" rel="noopener">Demo Reel</a> -->
+        </div>
+        <div class="hero__media">
+            <!-- Можно заменить на свой кадр/превью (положи картинку в /images/ и поправь src) -->
+            <div class="placeholder">Your Preview</div>
+        </div>
+    </div>
 </section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section">
+    <div class="container">
+        <h3 class="section__title">My Projects</h3>
+        <div class="grid">
+            <!-- Проект 1 -->
+            <article class="card">
+                <a class="card__link" href="https://github.com/SQVeeZee/swipeelements" target="_blank" rel="noopener" aria-label="Open project on GitHub">
+                    <div class="card__thumb">
+                        <div class="thumb-placeholder">Match-3</div>
+                    </div>
+                    <div class="card__body">
+                        <h4 class="card__title">Match-3 (2025)</h4>
+                        <div class="card__meta">Zenject • UniTask • Grid logic</div>
+                        <p class="card__desc">Сеточная логика, падение тайлов, объединения, модульная архитектура.</p>
+                    </div>
+                </a>
+            </article>
+
+            <!-- Проект 2 (пример) -->
+            <article class="card">
+                <a class="card__link" href="https://github.com/SQVeeZee/blockjam-ecs" target="_blank" rel="noopener">
+                    <div class="card__thumb"><div class="thumb-placeholder">ECS</div></div>
+                    <div class="card__body">
+                        <h4 class="card__title">BlockJam ECS (2025)</h4>
+                        <div class="card__meta">Entitas • Burst (опц.)</div>
+                        <p class="card__desc">Эксперимент с реактивными системами, падение/матчинг через компоненты.</p>
+                    </div>
+                </a>
+            </article>
+
+            <!-- Проект 3 (пример) -->
+            <article class="card">
+                <a class="card__link" href="https://github.com/SQVeeZee/cells-puzzle" target="_blank" rel="noopener">
+                    <div class="card__thumb"><div class="thumb-placeholder">Grid</div></div>
+                    <div class="card__body">
+                        <h4 class="card__title">Cells Puzzle (2024)</h4>
+                        <div class="card__meta">Grid • Addressables</div>
+                        <p class="card__desc">Контейнеры клеток, адаптация поля, сериализация уровней.</p>
+                    </div>
+                </a>
+            </article>
+
+            <!-- Проект 4 (пример) -->
+            <article class="card">
+                <a class="card__link" href="https://github.com/SQVeeZee/tower-defense-prototype" target="_blank" rel="noopener">
+                    <div class="card__thumb"><div class="thumb-placeholder">TD</div></div>
+                    <div class="card__body">
+                        <h4 class="card__title">Tower Defense (2023)</h4>
+                        <div class="card__meta">Scriptable Config • Zenject</div>
+                        <p class="card__desc">Конфиги волн/юнитов, DI, события и апгрейды.</p>
+                    </div>
+                </a>
+            </article>
+
+            <!-- Проект 5 (пример) -->
+            <article class="card">
+                <a class="card__link" href="https://github.com/SQVeeZee/stickman-runner" target="_blank" rel="noopener">
+                    <div class="card__thumb"><div class="thumb-placeholder">2D</div></div>
+                    <div class="card__body">
+                        <h4 class="card__title">Stickman Runner (2022)</h4>
+                        <div class="card__meta">2D • Anim • UniTask</div>
+                        <p class="card__desc">Асинхронные загрузки, пуллы, простая экономическая петля.</p>
+                    </div>
+                </a>
+            </article>
+        </div>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section alt">
+    <div class="container about">
+        <h3 class="section__title">About Me</h3>
+        <div class="about__grid">
+            <div class="about__media">
+                <div class="portrait">SQ</div>
+            </div>
+            <div class="about__text">
+                <p><strong>Привет, я Danila</strong>, Unity-разработчик из Варшавы. Делаю пазлы/матч-3, люблю чистые архитектуры (модули, .asmdef, DI), эксперименты с ECS и производительностью.</p>
+                <p>Готов к B2B/remote. Интересны задачи с нетривиальной игровой логикой, туллингом редактора и пайплайнами релизов.</p>
+                <p class="muted">Tech: Unity 2020–2025 • C# 9–12 • Entitas/DOTS • Zenject • UniTask • Addressables • Editor Tools • GitHub Actions.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+    <div class="container contact">
+        <h3 class="section__title">Contact</h3>
+        <div class="contact__grid">
+            <div class="contact__item">
+                <div class="contact__label">Email</div>
+                <a class="contact__link" href="mailto:sqveezee.dev@gmail.com">sqveezee.dev@gmail.com</a>
+            </div>
+            <div class="contact__item">
+                <div class="contact__label">GitHub</div>
+                <a class="contact__link" href="https://github.com/SQVeeZee" target="_blank" rel="noopener">github.com/SQVeeZee</a>
+            </div>
+            <div class="contact__item">
+                <div class="contact__label">LinkedIn</div>
+                <a class="contact__link" href="https://www.linkedin.com/in/sqveezee" target="_blank" rel="noopener">linkedin.com/in/sqveezee</a>
+            </div>
+            <div class="contact__item">
+                <div class="contact__label">Telegram</div>
+                <a class="contact__link" href="https://t.me/sqveezee" target="_blank" rel="noopener">@sqveezee</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container footer__inner">
+        <span>© 2025 Danila (SQVeeZee)</span>
+        <a href="#home" class="toplink">Back to top ↑</a>
+    </div>
+</footer>
 </body>
 </html>
