@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="utf-8" />
-    <title>Danila (SQVeeZee) — Unity Developer Portfolio</title>
+    <title>Danila Shyntar (SQVeeZee) — Unity Developer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Портфолио Unity-разработчика Danila (SQVeeZee): проекты 2020–2025 — Match-3, Entitas/DOTS, Zenject, UniTask." />
+    <meta name="description" content="Unity developer portfolio — 5 years experience. Casual, hybrid hyper-casual, puzzle. Entitas/DOTS, Zenject, UniTask, Addressables. Warsaw, Poland." />
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -13,13 +13,10 @@
     <div class="container nav__inner">
         <a href="#home" class="brand">SQVeeZee</a>
         <nav class="menu">
-            <a href="#home">Home</a>
             <a href="#projects">Projects</a>
-            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#stack">Tech Stack</a>
             <a href="#contact">Contact</a>
-            <!-- Раскомментируй, если добавишь резюме
-            <a href="resume.pdf" target="_blank" rel="noopener">Resume</a>
-            -->
         </nav>
     </div>
 </header>
@@ -28,18 +25,17 @@
 <section id="home" class="hero">
     <div class="container hero__inner">
         <div class="hero__text">
-            <h1 class="hero__title">Danila <span class="muted">(SQVeeZee)</span></h1>
+            <h1 class="hero__title">Danila Shyntar <span class="muted">(SQVeeZee)</span></h1>
             <h2 class="hero__subtitle">Unity Developer</h2>
             <p class="hero__lead">
-                2020–2025: Match-3/пазлы, сетки, Entitas/DOTS эксперименты, Zenject/UniTask, Addressables, Editor tooling.
-                Люблю чистую архитектуру и производительность.
+                5 years building casual / hybrid hyper-casual / puzzle games. Architected core mechanics, optimized UI and resources, integrated analytics & SDKs, and shipped internal tools for cross-functional teams.
             </p>
-            <!-- Кнопка на демо-ролик (если будет) -->
-            <!-- <a class="btn" href="https://youtu.be/..." target="_blank" rel="noopener">Demo Reel</a> -->
+            <p class="hero__meta">
+                📍 Warsaw, Poland — On-site · Hybrid · Remote
+            </p>
         </div>
         <div class="hero__media">
-            <!-- Можно заменить на свой кадр/превью (положи картинку в /images/ и поправь src) -->
-            <div class="placeholder">Your Preview</div>
+            <div class="portrait">SQ</div>
         </div>
     </div>
 </section>
@@ -47,66 +43,97 @@
 <!-- PROJECTS -->
 <section id="projects" class="section">
     <div class="container">
-        <h3 class="section__title">My Projects</h3>
+        <h3 class="section__title">Store & Code Projects (2020–2025)</h3>
+
         <div class="grid">
-            <!-- Проект 1 -->
+            <!-- Bubble Jam -->
             <article class="card">
-                <a class="card__link" href="https://github.com/SQVeeZee/swipeelements" target="_blank" rel="noopener" aria-label="Open project on GitHub">
+                <a class="card__link" href="https://play.google.com/store/apps/details?id=block.matching.puzzle.games" target="_blank" rel="noopener">
                     <div class="card__thumb">
-                        <div class="thumb-placeholder">Match-3</div>
+                        <svg viewBox="0 0 120 68" class="thumb-svg" aria-hidden="true">
+                            <rect x="0" y="0" width="120" height="68" rx="12" class="c1"/>
+                            <circle cx="36" cy="34" r="16" class="c2"/>
+                            <circle cx="60" cy="34" r="16" class="c3"/>
+                            <circle cx="84" cy="34" r="16" class="c4"/>
+                        </svg>
                     </div>
                     <div class="card__body">
-                        <h4 class="card__title">Match-3 (2025)</h4>
-                        <div class="card__meta">Zenject • UniTask • Grid logic</div>
-                        <p class="card__desc">Сеточная логика, падение тайлов, объединения, модульная архитектура.</p>
-                    </div>
-                </a>
-            </article>
-
-            <!-- Проект 2 (пример) -->
-            <article class="card">
-                <a class="card__link" href="https://github.com/SQVeeZee/blockjam-ecs" target="_blank" rel="noopener">
-                    <div class="card__thumb"><div class="thumb-placeholder">ECS</div></div>
-                    <div class="card__body">
-                        <h4 class="card__title">BlockJam ECS (2025)</h4>
-                        <div class="card__meta">Entitas • Burst (опц.)</div>
-                        <p class="card__desc">Эксперимент с реактивными системами, падение/матчинг через компоненты.</p>
+                        <h4 class="card__title">Bubble Jam</h4>
+                        <div class="card__meta">Google Play</div>
+                        <p class="card__desc">Core-module architecture, UI & resource optimizations, events & LTOs, analytics & SDKs.</p>
                     </div>
                 </a>
             </article>
 
-            <!-- Проект 3 (пример) -->
+            <!-- Cells -->
             <article class="card">
-                <a class="card__link" href="https://github.com/SQVeeZee/cells-puzzle" target="_blank" rel="noopener">
-                    <div class="card__thumb"><div class="thumb-placeholder">Grid</div></div>
+                <a class="card__link" href="https://play.google.com/store/apps/details?id=tile.link.matching.games" target="_blank" rel="noopener">
+                    <div class="card__thumb">
+                        <svg viewBox="0 0 120 68" class="thumb-svg" aria-hidden="true">
+                            <rect x="0" y="0" width="120" height="68" rx="12" class="c1"/>
+                            <rect x="24" y="18" width="24" height="24" rx="6" class="c3"/>
+                            <rect x="52" y="18" width="24" height="24" rx="6" class="c4"/>
+                            <rect x="80" y="18" width="16" height="24" rx="6" class="c2"/>
+                        </svg>
+                    </div>
                     <div class="card__body">
-                        <h4 class="card__title">Cells Puzzle (2024)</h4>
-                        <div class="card__meta">Grid • Addressables</div>
-                        <p class="card__desc">Контейнеры клеток, адаптация поля, сериализация уровней.</p>
+                        <h4 class="card__title">Cells</h4>
+                        <div class="card__meta">Google Play</div>
+                        <p class="card__desc">Grid-based logic, progression & leaderboards, cross-promo campaigns.</p>
                     </div>
                 </a>
             </article>
 
-            <!-- Проект 4 (пример) -->
+            <!-- Unpuzzle -->
             <article class="card">
-                <a class="card__link" href="https://github.com/SQVeeZee/tower-defense-prototype" target="_blank" rel="noopener">
-                    <div class="card__thumb"><div class="thumb-placeholder">TD</div></div>
+                <a class="card__link" href="https://play.google.com/store/apps/details?id=com.taptapgames.unpuzzle&hl=en" target="_blank" rel="noopener">
+                    <div class="card__thumb">
+                        <svg viewBox="0 0 120 68" class="thumb-svg" aria-hidden="true">
+                            <rect x="0" y="0" width="120" height="68" rx="12" class="c1"/>
+                            <path d="M24,44 L44,24 L64,44 L84,24" class="poly"/>
+                        </svg>
+                    </div>
                     <div class="card__body">
-                        <h4 class="card__title">Tower Defense (2023)</h4>
-                        <div class="card__meta">Scriptable Config • Zenject</div>
-                        <p class="card__desc">Конфиги волн/юнитов, DI, события и апгрейды.</p>
+                        <h4 class="card__title">Unpuzzle</h4>
+                        <div class="card__meta">Google Play</div>
+                        <p class="card__desc">Core mechanics & UI/UX improvements, resource management, analytics.</p>
                     </div>
                 </a>
             </article>
 
-            <!-- Проект 5 (пример) -->
+            <!-- Bank Robbery -->
             <article class="card">
-                <a class="card__link" href="https://github.com/SQVeeZee/stickman-runner" target="_blank" rel="noopener">
-                    <div class="card__thumb"><div class="thumb-placeholder">2D</div></div>
+                <a class="card__link" href="https://play.google.com/store/apps/details?id=by.RTSR.a4robbery&hl=ru&gl=US" target="_blank" rel="noopener">
+                    <div class="card__thumb">
+                        <svg viewBox="0 0 120 68" class="thumb-svg" aria-hidden="true">
+                            <rect x="0" y="0" width="120" height="68" rx="12" class="c1"/>
+                            <rect x="28" y="20" width="64" height="28" rx="6" class="c2"/>
+                            <circle cx="60" cy="34" r="6" class="c4"/>
+                        </svg>
+                    </div>
                     <div class="card__body">
-                        <h4 class="card__title">Stickman Runner (2022)</h4>
-                        <div class="card__meta">2D • Anim • UniTask</div>
-                        <p class="card__desc">Асинхронные загрузки, пуллы, простая экономическая петля.</p>
+                        <h4 class="card__title">Bank Robbery</h4>
+                        <div class="card__meta">Google Play</div>
+                        <p class="card__desc">Hybrid hyper-casual prototype — gameplay loop, UI/UX, effects, analytics.</p>
+                    </div>
+                </a>
+            </article>
+
+            <!-- Open Code: swipeelements -->
+            <article class="card">
+                <a class="card__link" href="https://github.com/SQVeeZee/swipeelements" target="_blank" rel="noopener">
+                    <div class="card__thumb">
+                        <svg viewBox="0 0 120 68" class="thumb-svg" aria-hidden="true">
+                            <rect x="0" y="0" width="120" height="68" rx="12" class="c1"/>
+                            <rect x="22" y="22" width="22" height="22" rx="5" class="c2"/>
+                            <rect x="49" y="22" width="22" height="22" rx="5" class="c3"/>
+                            <rect x="76" y="22" width="22" height="22" rx="5" class="c4"/>
+                        </svg>
+                    </div>
+                    <div class="card__body">
+                        <h4 class="card__title">Match-3 (Open Code)</h4>
+                        <div class="card__meta">GitHub</div>
+                        <p class="card__desc">Zenject • UniTask • grid logic & falling, clean modular architecture.</p>
                     </div>
                 </a>
             </article>
@@ -114,19 +141,91 @@
     </div>
 </section>
 
-<!-- ABOUT -->
-<section id="about" class="section alt">
-    <div class="container about">
-        <h3 class="section__title">About Me</h3>
-        <div class="about__grid">
-            <div class="about__media">
-                <div class="portrait">SQ</div>
+<!-- EXPERIENCE -->
+<section id="experience" class="section alt">
+    <div class="container">
+        <h3 class="section__title">Work Experience</h3>
+        <div class="timeline">
+            <div class="job">
+                <div class="job__head">
+                    <div><strong>Appsulove</strong> — Unity Developer</div>
+                    <div class="muted">Aug 2022 — Jun 2025</div>
+                </div>
+                <ul class="job__list">
+                    <li>Developed 2D/3D mobile games (<em>Bubble Jam</em>, <em>Cells</em>) using core-module architecture.</li>
+                    <li>Optimized UI & resource management to improve overall performance.</li>
+                    <li>Implemented progression, leaderboards, and liveops events (LTOs, seasonal campaigns).</li>
+                    <li>Set up cross-promotion campaigns; integrated analytics, UI systems, audio, VFX, and various SDKs.</li>
+                </ul>
             </div>
-            <div class="about__text">
-                <p><strong>Привет, я Danila</strong>, Unity-разработчик из Варшавы. Делаю пазлы/матч-3, люблю чистые архитектуры (модули, .asmdef, DI), эксперименты с ECS и производительностью.</p>
-                <p>Готов к B2B/remote. Интересны задачи с нетривиальной игровой логикой, туллингом редактора и пайплайнами релизов.</p>
-                <p class="muted">Tech: Unity 2020–2025 • C# 9–12 • Entitas/DOTS • Zenject • UniTask • Addressables • Editor Tools • GitHub Actions.</p>
+
+            <div class="job">
+                <div class="job__head">
+                    <div><strong>SkyRocket / Azure Pro</strong> — Unity Developer</div>
+                    <div class="muted">Aug 2020 — Nov 2021</div>
+                </div>
+                <ul class="job__list">
+                    <li>Built hybrid hyper-casual games (incl. <em>Bank Robbery</em>) with robust core gameplay loops.</li>
+                    <li>Integrated analytics, SDKs, plugins; improved UI/UX, effects, resource management.</li>
+                </ul>
             </div>
+
+            <div class="job">
+                <div class="job__head">
+                    <div><strong>Apps Hub</strong> — Unity Developer</div>
+                    <div class="muted">Aug 2019 — Aug 2020</div>
+                </div>
+                <ul class="job__list">
+                    <li>Developed 3D hyper-casual games end-to-end — from idea to release.</li>
+                    <li>Implemented UI, physics, core mechanics, analytics, and SDKs.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- STACK -->
+<section id="stack" class="section">
+    <div class="container">
+        <h3 class="section__title">Technology Stack</h3>
+        <div class="stack">
+            <div class="stack__col">
+                <div class="stack__title">Core</div>
+                <ul>
+                    <li>Unity, Git</li>
+                    <li>Zenject, Entitas (ECS)</li>
+                    <li>UniTask, UniRx</li>
+                </ul>
+            </div>
+            <div class="stack__col">
+                <div class="stack__title">Rendering & Animation</div>
+                <ul>
+                    <li>URP / HDRP, basic shaders</li>
+                    <li>Animator, Spine, Timeline, DoTween</li>
+                </ul>
+            </div>
+            <div class="stack__col">
+                <div class="stack__title">Assets & Tooling</div>
+                <ul>
+                    <li>Addressables, Resources, StreamingAssets</li>
+                    <li>Unity Profiler, Android Studio</li>
+                    <li>GitHub Actions (CI)</li>
+                </ul>
+            </div>
+            <div class="stack__col">
+                <div class="stack__title">Online & Analytics</div>
+                <ul>
+                    <li>Photon (PUN2)</li>
+                    <li>Firebase, AppMetrica, AppsFlyer, Facebook SDK</li>
+                    <li>BI: Magify</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="lang-edu">
+            <div><strong>Languages:</strong> Russian — Native; English — A2 (improving)</div>
+            <div><strong>Education:</strong> BSUIR (2016–2020) — Information Systems & Technologies in Game Industry</div>
+            <div><strong>Achievements:</strong> Ludum Dare 44 — 1st place (Best Mechanics, Best Game, Best Graphics); Ludum Dare 45 — participant</div>
         </div>
     </div>
 </section>
@@ -138,27 +237,28 @@
         <div class="contact__grid">
             <div class="contact__item">
                 <div class="contact__label">Email</div>
-                <a class="contact__link" href="mailto:sqveezee.dev@gmail.com">sqveezee.dev@gmail.com</a>
+                <a class="contact__link" href="mailto:danila.shintar@gmail.com">danila.shintar@gmail.com</a>
+            </div>
+            <div class="contact__item">
+                <div class="contact__label">LinkedIn</div>
+                <a class="contact__link" href="https://www.linkedin.com/in/danila-shyntar-19b443153/" target="_blank" rel="noopener">linkedin.com/in/danila-shyntar-19b443153</a>
+            </div>
+            <div class="contact__item">
+                <div class="contact__label">Telegram</div>
+                <a class="contact__link" href="https://t.me/Danila_Ss" target="_blank" rel="noopener">@Danila_Ss</a>
             </div>
             <div class="contact__item">
                 <div class="contact__label">GitHub</div>
                 <a class="contact__link" href="https://github.com/SQVeeZee" target="_blank" rel="noopener">github.com/SQVeeZee</a>
             </div>
-            <div class="contact__item">
-                <div class="contact__label">LinkedIn</div>
-                <a class="contact__link" href="https://www.linkedin.com/in/sqveezee" target="_blank" rel="noopener">linkedin.com/in/sqveezee</a>
-            </div>
-            <div class="contact__item">
-                <div class="contact__label">Telegram</div>
-                <a class="contact__link" href="https://t.me/sqveezee" target="_blank" rel="noopener">@sqveezee</a>
-            </div>
         </div>
     </div>
 </section>
 
+<!-- FOOTER -->
 <footer class="footer">
     <div class="container footer__inner">
-        <span>© 2025 Danila (SQVeeZee)</span>
+        <span>© 2025 Danila Shyntar (SQVeeZee)</span>
         <a href="#home" class="toplink">Back to top ↑</a>
     </div>
 </footer>
