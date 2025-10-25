@@ -8,8 +8,9 @@
 
 .card__thumb{
     position:relative; background:#f5f7fb; border-bottom:1px solid var(--line);
-    aspect-ratio:16/9; overflow:hidden;
+    aspect-ratio:1/1; overflow:hidden;
 }
+
 .card__thumb picture,.card__thumb img{width:100%; height:100%; display:block}
 .card__image{object-fit:cover; transition:transform .4s ease}
 

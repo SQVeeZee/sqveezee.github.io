@@ -6,21 +6,11 @@
 }
 
 .project-title {
-    margin: 10px 0 12px;
+    margin: 0 0 30px;
     font-size: 34px;
     font-weight: 800;
     letter-spacing: .2px;
     color: var(--text);
-}
-
-.project-icon {
-    width: 180px;
-    height: 180px;
-    object-fit: cover;
-    border-radius: 24px;
-    display: inline-block;
-    box-shadow: 0 10px 30px rgba(0,0,0,.18);
-    margin: 10px 0 16px;
 }
 
 .store-buttons {
@@ -31,7 +21,6 @@
     margin: 6px 0 8px;
 }
 
-/* Бейдж-кнопки стор */
 .btn.btn--store {
     display: inline-flex;
     align-items: center;
@@ -46,28 +35,24 @@
     box-shadow: var(--shadow);
 }
 
-/* iOS – чёрный бейдж по гайдам Apple */
 .btn.btn--store.ios {
     background: #595454;
     color: #fff;
     border-color: #000;
 }
 
-/* Android – зелёный с контрастным текстом */
 .btn.btn--store.android {
-    background: #3ddc84; /* Google Play green */
+    background: #3ddc84;
     color: #0b2b17;
     border-color: #2fb86b;
 }
 
 .btn.btn--store:hover { filter: brightness(.95); text-decoration: none; }
 
-/* Мелкий подпояснительный текст */
 .project-publish-note {
     margin-top: 6px;
 }
 
-/* Адаптив */
 @media (max-width: 560px) {
     .project-title { font-size: 28px; }
     .project-icon { width: 140px; height: 140px; border-radius: 20px; }
@@ -113,7 +98,6 @@
     color: var(--text);
 }
 
-/* Чуть плотнее теги именно в карточке проекта */
 .project-tech-card .tags {
     gap: 10px;
     color: var(--text);
@@ -123,4 +107,75 @@
     padding: 6px 10px;
     font-size: 13px;
     color: var(--text);
+}
+
+:root{
+    --icon-w: 250px;
+    --phone-w: 420px;  
+    --phone-scale: 0.65;   
+    --pair-gap: 60px;    
+    --screen-bottom-gap: 30px;
+}
+
+.project-showcase{
+    display: grid;
+    grid-template-columns: 1fr auto 1fr; /* центр – авто-колонка под телефон */
+    column-gap: var(--pair-gap);
+    align-items: center;
+    justify-items: center;             /* центрируем по колонкам по умолчанию */
+}
+
+/* иконка в левой колонке, прижата к телефону */
+.project-icon{
+    grid-column: 1;
+    justify-self: end;               
+    width: var(--icon-w);
+    height: var(--icon-w);
+    object-fit: cover;
+    border-radius: 40px;
+    box-shadow: 0 8px 20px rgba(0,0,0,.25);
+}
+
+.project-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+/* телефон строго в центральной колонке и фиксируем его ширину */
+.phone-wrap{
+    grid-column: 2;
+    width: calc(var(--phone-w) * var(--phone-scale));
+}
+
+/* далее твои стили телефона */
+.phone-frame{
+    position: relative;
+    width: 100%;
+    aspect-ratio: 9/16;
+    border: 10px solid #111;
+    border-radius: 36px;
+    background: #000;
+    box-shadow: 0 0 0 4px #222, 0 8px 24px rgba(0,0,0,.4);
+    padding: 1px;
+    overflow: hidden;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+}
+.phone-frame::before{content:"";position:absolute;top:8px;left:50%;transform:translateX(-50%);width:50px;height:5px;border-radius:3px;background:#222;}
+.phone-frame::after{content:"";position:absolute;bottom:12px;left:50%;transform:translateX(-50%);width:24px;height:24px;border:2px solid #333;border-radius:50%;}
+.video-viewport{position:relative;flex:1 1 auto;margin:1px 1px var(--screen-bottom-gap);border-radius:24px;overflow:hidden;background:#000;}
+.video-viewport video{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;display:block;background:#000;border-radius:24px;}
+
+/* Мобилка: в столбик */
+@media (max-width: 780px){
+    .project-showcase{
+        grid-template-columns: 1fr;
+        row-gap: 30px;
+        justify-items: center;
+    }
+    .project-icon{ width:140px; height:140px; justify-self: center; }
+    .phone-wrap{ width: min(calc(var(--phone-w) * var(--phone-scale)), 90vw); }
 }

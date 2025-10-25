@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Bubble jam — Project Details</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="../../../css/00-variables.css">
+    <link rel="stylesheet" href="../../../css/01-base.css">
+    <link rel="stylesheet" href="../../../css/02-layout.css">
+
+    <link rel="stylesheet" href="../../../css/components/nav.css">
+    <link rel="stylesheet" href="../../../css/components/buttons.css">
+    <link rel="stylesheet" href="../../../css/components/contact-bar.css">
+    <link rel="stylesheet" href="../../../css/components/project.css">
+    <link rel="stylesheet" href="../../../css/components/stack.css">
+
+    <link rel="stylesheet" href="../../../css/utils.css">
+    <link rel="stylesheet" href="../../../css/responsive.css">
+</head>
+<body>
+
+<header class="nav">
+    <div class="container nav__inner">
+        <a href="../../../index.html" class="brand">← Back to Portfolio</a>
+        <nav class="menu">
+            <a href="../../../index.html#projects">Projects</a>
+            <a href="../../../index.html#experience">Experience</a>
+            <a href="../../../index.html#stack">Tech Stack</a>
+            <a href="../../../cv/index.html">CV</a>
+        </nav>
+    </div>
+</header>
+
+<section class="project-hero section">
+    <div class="container">
+        <h1 class="project-title">Bubble Jam</h1>
+        <div class="project-showcase">
+
+            <div class="project-info">
+                <img class="project-icon"
+                     src="../../../content/images/bubble-jam.webp"
+                     alt="Bubble Jam icon">
+
+                <div class="store-buttons">
+                    <a class="btn btn--store ios"
+                       href="https://apps.apple.com/us/app/bubble-jam-block-match-games/id6478915866"
+                       target="_blank" rel="noopener">
+                         App Store
+                    </a>
+                    <a class="btn btn--store android"
+                       href="https://play.google.com/store/apps/details?id=block.matching.puzzle.games"
+                       target="_blank" rel="noopener">
+                        ▶ Google Play
+                    </a>
+                </div>
+            </div>
+
+            <div class="phone-wrap">
+                <div class="phone-frame">
+                    <div class="video-viewport">
+                        <video controls preload="metadata"
+                               poster="../../../content/images/bubble-jam-preview.webp">
+                            <source src="../../../content/videos/bubble-jam.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Contributions -->
+<section class="section project-details">
+    <div class="container">
+        <h3 class="project-subtitle">Personal Contributions</h3>
+
+        <!-- GAME LAYER -->
+        <h4 class="stack-title">Game Systems</h4>
+        <ul class="project-list">
+            <li>Enhanced the core merge-puzzle gameplay system built on a grid-based cell architecture.</li>
+            <li>Implemented a flexible cell behavior framework with multiple types (Feats, Accessories, Special features).</li>
+            <li>Integrated an A* pathfinding algorithm with dynamic weight calculation for character navigation.</li>
+            <li>Developed a level progression system supporting multiple gameplay modes (Resume, Revive, Restart, AutoComplete).</li>
+            <li>Implemented shuffle, hint, and booster mechanics to enhance gameplay variety.</li>
+            <li>Built a VFX system with particle effects, destruction animations, and cell transformation sequences.</li>
+            <li>Implemented an asynchronous item container system with coordinate tracking and lifecycle management via UniTask.</li>
+            <li>Developed comprehensive game logic handling win/lose conditions, merge validation, and combo chains.</li>
+            <li>Built a stack capacity monitoring system with real-time visual warnings and adaptive environment feedback.</li>
+            <li>Implemented a time-limited leaderboard system with league-based progression.</li>
+            <li>Developed a character system featuring material management and dynamic visual customization.</li>
+        </ul>
+
+        <!-- Extra LAYER -->
+        <h4 class="stack-title">Extra Systems</h4>
+        <ul class="project-list">
+            <li>Adapted and integrated core gameplay from an external Unity project into the main game as a meta-game, ensuring compatibility across systems (progression, analytics).</li>
+            <li>Developed a location-based environment system with an editor importer for dynamic theme and sprite switching.</li>
+            <li>Built a level initialization pipeline supporting both single and multi-level configurations.</li>
+            <li>Reworked level architecture by migrating from a custom grid to Unity’s Tilemap system, streamlining content creation and new tile integration.</li>
+            <li>Developed in-editor tools for level design, rapid gameplay testing workflows, and scene payload validation.</li>
+        </ul>
+    </div>
+</section>
+
+
+<!-- STACK -->
+<section class="section project-details">
+    <div class="container">
+        <h3 class="project-subtitle">Tech stack</h3>
+        <article class="stack-card">
+            <div class="tags">
+                <span class="tag">Unity</span>
+                <span class="tag">Git</span>
+                <span class="tag">Zenject</span>
+                <span class="tag">UniRx</span>
+                <span class="tag">URP</span>
+                <span class="tag">Addressables</span>
+                <span class="tag">Tilemap</span>
+                <span class="tag">Magify</span>
+            </div>
+        </article>
+    </div>
+</section>
+
+<!-- BOTTOM CONTACT BAR (как на главной) -->
+<section id="contact" class="contact-bar">
+    <div class="container contact__inner">
+        <a class="contact__link" href="mailto:danila.shintar@gmail.com">📧 danila.shintar@gmail.com</a>
+        <a class="contact__link" href="https://www.linkedin.com/in/danila-shyntar-19b443153/" target="_blank" rel="noopener">💼 LinkedIn</a>
+        <a class="contact__link" href="https://t.me/Danila_Ss" target="_blank" rel="noopener">💬 Telegram</a>
+        <a class="contact__link" href="https://github.com/SQVeeZee" target="_blank" rel="noopener">💻 GitHub</a>
+    </div>
+</section>
+</body>
+</html>
