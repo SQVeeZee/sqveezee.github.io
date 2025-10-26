@@ -36,14 +36,14 @@
 <!-- PROjECT SECTION -->
 <section class="project-hero section">
     <div class="container">
-        <h1 class="project-title">Big City Lines</h1>
+        <h1 class="project-title">Big city lines</h1>
         <div class="project-showcase">
-            <img class="project-icon" src="../../../content/images/big-city-lines.png" alt="big-city-lines icon">
+            <img class="project-icon" src="../../../content/images/big-city-lines.png" alt="Big city lines icon">
             <div class="phone-wrap">
                 <div class="phone-frame">
                     <div class="video-viewport">
                         <video controls preload="metadata" poster=".../preview.webp">
-                            <source src="../../../content/videos/big-city-lines.mp4" type="video/mp4">
+                            <source src="../../../content/videos/bit-city-lines.mp4" type="video/mp4">
                         </video>
                     </div>
                 </div>
@@ -52,17 +52,51 @@
     </div>
 </section>
 
-<!-- Contributions -->
+<<!-- Contributions -->
 <section class="section project-details">
     <div class="container">
-        <h3 class="project-subtitle">Personal Contributions</h3>
+        <h3 class="project-subtitle">Personal Contributions — Big City Lines</h3>
 
-        <!-- GAME LAYER -->
-        <h4 class="stack-title">TODO</h4>
+        <!-- GAMEPLAY SYSTEMS -->
+        <h4 class="stack-title">Gameplay & Level Flow</h4>
         <ul class="project-list">
+            <li>Implemented and maintained the <strong>Level system</strong> with editor integration and support for test levels.</li>
+            <li>Refined core level flow and restart/resume logic, fixing state resets and sublevel transitions (Win/Lose, revive, auto-complete, sublevel-complete).</li>
+            <li>Integrated and configured <strong>Cinemachine</strong> for dynamic camera control — added smooth transitions, camera centering, and adaptive framing logic.</li>
+            <li>Enhanced building progression visuals and ensured consistent project completion logic across multiple sub-levels.</li>
+        </ul>
+
+        <!-- META SYSTEMS -->
+        <h4 class="stack-title">Meta & Systems</h4>
+        <ul class="project-list">
+            <li>Integrated and fixed <strong>Crashlytics</strong> reports in gameplay and UI systems (<code>LevelManager.LoadSubLevel</code>, <code>ConnectionsController</code>, <code>ChestBonusPanel</code>).</li>
+            <li>Reworked <strong>Daily Gift</strong>, chest rewards, and meta-progression (sound triggers, duplicate clicks, reward consistency).</li>
+            <li>Added “No Internet” handling for reward windows and network popups.</li>
+            <li>Refactored tutorial activation logic and scene payload system for consistent triggering.</li>
+            <li>Implemented in-editor <strong>House Painting</strong> tool and runtime painting system.</li>
+        </ul>
+
+        <!-- UI & UX -->
+        <h4 class="stack-title">UI / UX Improvements</h4>
+        <ul class="project-list">
+            <li>Updated color presets, environment settings, and unified splash/win screen visual style.</li>
+            <li>Expanded tap/click zones on tabs and buttons, fixed layout, and hint/shop visibility issues.</li>
+            <li>Added haptic feedback for toggle interactions and user input confirmations.</li>
+            <li>Polished win/lose screens, banner overlays, and confetti/VFX handling.</li>
+            <li>Localized interface elements, fixed missing keys, and removed redundant spacing in text layouts.</li>
+        </ul>
+
+        <!-- TECHNICAL / PROJECT -->
+        <h4 class="stack-title">Technical & Project Maintenance</h4>
+        <ul class="project-list">
+            <li>Upgraded project template and core versions with full config migration.</li>
+            <li>Converted assets and builds for size optimization, updated environment presets, and lighting setups.</li>
+            <li>Fixed sound routing, double-triggered events, and performance issues in heavy UI scenes.</li>
+            <li>Maintained build stability across multiple versions and integrated updated default configurations.</li>
         </ul>
     </div>
 </section>
+
 
 <!-- STACK -->
 <section class="section project-details">
@@ -76,6 +110,7 @@
                 <span class="tag">UniRx</span>
                 <span class="tag">URP</span>
                 <span class="tag">Addressables</span>
+                <span class="tag">Cinemachine</span>
                 <span class="tag">Magify</span>
             </div>
         </article>
